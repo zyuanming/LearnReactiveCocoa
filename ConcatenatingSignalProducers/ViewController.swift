@@ -88,6 +88,8 @@ class ViewController: UIViewController {
         var a: TestSignalDeinit?
         a = TestSignalDeinit()
         a = nil
+
+        TestSignalAndObserver()
     }
 
 
@@ -183,3 +185,75 @@ class TestSignalDeinit {
         // observer.sendCompleted() // *
     }
 }
+
+
+
+
+class TestSignalAndObserver {
+    let active = MutableProperty(false)
+    let refreshObserver: Observer<Void, NoError>
+    let isLoading: MutableProperty<Bool>
+    let contentChangesSignal: Signal<[Player], NoError>
+    let contentChangesObserver: Observer<[Player], NoError>
+
+    class Player {
+
+    }
+
+    init() {
+
+        let isLoading = MutableProperty(false)
+        self.isLoading = isLoading
+        let (refreshSignal, refreshObserver) = Signal<Void, NoError>.pipe()
+        self.refreshObserver = refreshObserver
+
+        let (contentChangesSignal, contentChangesObserver) = Signal<[Player], NoError>.pipe()
+        self.contentChangesSignal = contentChangesSignal
+        self.contentChangesObserver = contentChangesObserver
+
+        SignalProducer(refreshSignal)
+            .on(starting: { _ in
+                isLoading.value = true
+                print("isLoading")
+            })
+            .flatMap(.latest, transform: { _ in
+                return SignalProducer(value: [Player(), Player(), Player()])
+            })
+            .on(started: { _ in
+                isLoading.value = false
+                print("isLoading completed")
+            })
+            .combinePrevious([])
+            .startWithValues({ [weak self] (oldPlayers, newPlayers) in
+                if let observer = self?.contentChangesObserver {
+                    observer.send(value: newPlayers)
+                }
+            })
+
+
+        self.isLoading.producer
+            .observe(on: UIScheduler())
+            .startWithValues({ isLoading in
+                print("observer isLoading : \(isLoading)")
+            })
+
+        self.contentChangesSignal
+            .observe(on: UIScheduler())
+            .observeValues({ players in
+                print("new players count is \(players.count)")
+            })
+
+
+        // begin Test
+        self.refreshObserver.send(value: ())
+    }
+
+    deinit {
+        print("TestSignalAndObserver deinit")
+    }
+}
+
+
+
+
+
