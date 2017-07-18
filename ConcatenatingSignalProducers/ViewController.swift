@@ -255,5 +255,13 @@ class TestSignalAndObserver {
 
 
 
+class TestSignalInput {
+    func test() {
+        let signal = Signal<(), NoError>.pipe()
+        signal.input
+    }
+}
+
+
 
 
