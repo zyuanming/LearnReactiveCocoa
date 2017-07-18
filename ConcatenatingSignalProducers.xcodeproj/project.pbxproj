@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608A47701F1DF9C500B31821 /* SearchCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A476B1F1DF9C500B31821 /* SearchCellItem.swift */; };
+		608A47711F1DF9C500B31821 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A476C1F1DF9C500B31821 /* SearchViewModel.swift */; };
+		608A47721F1DF9C500B31821 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 608A476E1F1DF9C500B31821 /* words.txt */; };
+		608A47731F1DF9C500B31821 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A476F1F1DF9C500B31821 /* SearchViewController.swift */; };
+		608A477C1F1DFA0400B31821 /* CellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A47761F1DFA0400B31821 /* CellProtocols.swift */; };
+		608A477D1F1DFA0400B31821 /* GenericTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A47771F1DFA0400B31821 /* GenericTableCell.swift */; };
+		608A477E1F1DFA0400B31821 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A47781F1DFA0400B31821 /* Storyboard.swift */; };
+		608A477F1F1DFA0400B31821 /* TableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A47791F1DFA0400B31821 /* TableViewProtocols.swift */; };
+		608A47801F1DFA0400B31821 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A477B1F1DFA0400B31821 /* UserDefaults.swift */; };
 		FA0A92531DF5D39700539253 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92521DF5D39700539253 /* ReactiveSwift.framework */; };
 		FA0A92551DF5D44F00539253 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92541DF5D44F00539253 /* Result.framework */; };
 		FA39B2501DF5A7D9005D12F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39B24F1DF5A7D9005D12F2 /* AppDelegate.swift */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		608A476B1F1DF9C500B31821 /* SearchCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCellItem.swift; sourceTree = "<group>"; };
+		608A476C1F1DF9C500B31821 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		608A476E1F1DF9C500B31821 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		608A476F1F1DF9C500B31821 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		608A47761F1DFA0400B31821 /* CellProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellProtocols.swift; sourceTree = "<group>"; };
+		608A47771F1DFA0400B31821 /* GenericTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableCell.swift; sourceTree = "<group>"; };
+		608A47781F1DFA0400B31821 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		608A47791F1DFA0400B31821 /* TableViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewProtocols.swift; sourceTree = "<group>"; };
+		608A477B1F1DFA0400B31821 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		FA0A92521DF5D39700539253 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		FA0A92541DF5D44F00539253 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 		FA39B24C1DF5A7D9005D12F2 /* ConcatenatingSignalProducers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcatenatingSignalProducers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +59,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		608A47691F1DF9C500B31821 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				608A476A1F1DF9C500B31821 /* Components */,
+				608A476D1F1DF9C500B31821 /* DataSource */,
+				608A476F1F1DF9C500B31821 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		608A476A1F1DF9C500B31821 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				608A476B1F1DF9C500B31821 /* SearchCellItem.swift */,
+				608A476C1F1DF9C500B31821 /* SearchViewModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		608A476D1F1DF9C500B31821 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				608A476E1F1DF9C500B31821 /* words.txt */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		608A47741F1DFA0400B31821 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				608A47751F1DFA0400B31821 /* UI */,
+				608A477A1F1DFA0400B31821 /* UserDefaults */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		608A47751F1DFA0400B31821 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				608A47761F1DFA0400B31821 /* CellProtocols.swift */,
+				608A47771F1DFA0400B31821 /* GenericTableCell.swift */,
+				608A47781F1DFA0400B31821 /* Storyboard.swift */,
+				608A47791F1DFA0400B31821 /* TableViewProtocols.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		608A477A1F1DFA0400B31821 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				608A477B1F1DFA0400B31821 /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		FA0A924C1DF5D28200539253 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +142,8 @@
 		FA39B24E1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */ = {
 			isa = PBXGroup;
 			children = (
+				608A47741F1DFA0400B31821 /* Components */,
+				608A47691F1DF9C500B31821 /* Search */,
 				FA0A924C1DF5D28200539253 /* Frameworks */,
 				FA39B2611DF5A818005D12F2 /* Resources */,
 				FA39B24F1DF5A7D9005D12F2 /* AppDelegate.swift */,
@@ -150,6 +225,7 @@
 			files = (
 				FA39B25A1DF5A7D9005D12F2 /* LaunchScreen.storyboard in Resources */,
 				FA39B2571DF5A7D9005D12F2 /* Assets.xcassets in Resources */,
+				608A47721F1DF9C500B31821 /* words.txt in Resources */,
 				FA39B2551DF5A7D9005D12F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,8 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608A47731F1DF9C500B31821 /* SearchViewController.swift in Sources */,
+				608A477C1F1DFA0400B31821 /* CellProtocols.swift in Sources */,
 				FA39B2521DF5A7D9005D12F2 /* ViewController.swift in Sources */,
 				FA39B2501DF5A7D9005D12F2 /* AppDelegate.swift in Sources */,
+				608A477E1F1DFA0400B31821 /* Storyboard.swift in Sources */,
+				608A47711F1DF9C500B31821 /* SearchViewModel.swift in Sources */,
+				608A47801F1DFA0400B31821 /* UserDefaults.swift in Sources */,
+				608A477F1F1DFA0400B31821 /* TableViewProtocols.swift in Sources */,
+				608A47701F1DF9C500B31821 /* SearchCellItem.swift in Sources */,
+				608A477D1F1DFA0400B31821 /* GenericTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
