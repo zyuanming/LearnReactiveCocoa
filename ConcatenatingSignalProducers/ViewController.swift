@@ -8,6 +8,7 @@
 
 import UIKit
 import ReactiveSwift
+import ReactiveCocoa
 import Result
 
 extension SignalProducer {
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
 //        a = TestSignalDeinit()
 //        a = nil
 //
-        TestSignalAndObserver()
+        _ = TestSignalAndObserver()
 
         TestCombineLatest().test()
     }
@@ -198,10 +199,18 @@ class TestSignalDeinit {
 
 class TestSignalAndObserver {
     let active = MutableProperty(false)
-    let refreshObserver: Observer<Void, NoError>
+    let refreshObserver: Signal<Void, NoError>.Observer
     let isLoading: MutableProperty<Bool>
     let contentChangesSignal: Signal<[Player], NoError>
-    let contentChangesObserver: Observer<[Player], NoError>
+    let contentChangesObserver: Signal<[Player], NoError>.Observer
+
+    // Actions
+    lazy var deleteAction: Action<IndexPath, Bool, AnyError> = { [unowned self] in
+        return Action(execute: { indexPath in
+            // delete, return true if success
+            return SignalProducer(value: true)
+        })
+    }()
 
     class Player {
 
@@ -217,6 +226,24 @@ class TestSignalAndObserver {
         let (contentChangesSignal, contentChangesObserver) = Signal<[Player], NoError>.pipe()
         self.contentChangesSignal = contentChangesSignal
         self.contentChangesObserver = contentChangesObserver
+
+        // Trigger refresh when view becomes active
+        active.producer
+            .filter { $0 }
+            .map { _ in () }
+            .start(refreshObserver)
+
+        // Trigger refresh after deleting a match
+        deleteAction.values
+            .filter { $0 }
+            .map { _ in () }
+            .observe(refreshObserver)
+
+        self.isLoading.producer
+            .observe(on: UIScheduler())
+            .startWithValues({ isLoading in
+                print("observer isLoading : \(isLoading)")
+            })
 
         SignalProducer(refreshSignal)
             .on(starting: { _ in
@@ -235,12 +262,12 @@ class TestSignalAndObserver {
                     print("interrupted")
                 }
             })
+            .flatMap(.latest, { _ in
+                return SignalProducer(value: [Player(), Player(), Player()])
+            })
             .on(started: { _ in
                 self.isLoading.value = false
                 print("isLoading completed")
-            })
-            .flatMap(.latest, transform: { _ in
-                return SignalProducer(value: [Player(), Player(), Player()])
             })
             .combinePrevious([])
             .startWithValues({ [weak self] (oldPlayers, newPlayers) in
@@ -250,11 +277,7 @@ class TestSignalAndObserver {
             })
 
 
-        self.isLoading.producer
-            .observe(on: UIScheduler())
-            .startWithValues({ isLoading in
-                print("observer isLoading : \(isLoading)")
-            })
+
 
         self.contentChangesSignal
             .observe(on: UIScheduler())
@@ -282,7 +305,7 @@ class TestSignalAndObserver {
 class TestSignalInput {
     func test() {
         let signal = Signal<(), NoError>.pipe()
-        signal.input
+        _ = signal.input
     }
 }
 
