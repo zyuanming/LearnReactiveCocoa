@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		601606FD1F2F22E000159846 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601606FC1F2F22E000159846 /* ArrayExt.swift */; };
+		6058D1CF1F32CD720074A261 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1CE1F32CD720074A261 /* ImageViewModel.swift */; };
+		6058D1DB1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1DA1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift */; };
+		6058D1E21F32CE6E0074A261 /* ImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1D01F32CDB50074A261 /* ImageViewModelTests.swift */; };
+		6058D1E31F32CE7F0074A261 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6058D1D21F32CDF10074A261 /* XCTest.framework */; };
+		6058D1E41F32CE970074A261 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */; };
+		6058D1E51F32CE970074A261 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92521DF5D39700539253 /* ReactiveSwift.framework */; };
+		6058D1E61F32CE970074A261 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92541DF5D44F00539253 /* Result.framework */; };
+		6058D1E71F32F9A60074A261 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1CE1F32CD720074A261 /* ImageViewModel.swift */; };
+		605EB82C1F346B8800ABCAFE /* PaginatedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605EB82B1F346B8800ABCAFE /* PaginatedListViewModel.swift */; };
+		605EB82E1F346EE600ABCAFE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605EB82D1F346EE500ABCAFE /* Utils.swift */; };
+		605EB8311F347C6000ABCAFE /* PaginatedListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605EB82F1F347C5B00ABCAFE /* PaginatedListViewModelTests.swift */; };
+		605EB8321F347C6300ABCAFE /* PaginatedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605EB82B1F346B8800ABCAFE /* PaginatedListViewModel.swift */; };
+		605EB8331F347C6600ABCAFE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605EB82D1F346EE500ABCAFE /* Utils.swift */; };
 		608A47701F1DF9C500B31821 /* SearchCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A476B1F1DF9C500B31821 /* SearchCellItem.swift */; };
 		608A47711F1DF9C500B31821 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A476C1F1DF9C500B31821 /* SearchViewModel.swift */; };
 		608A47721F1DF9C500B31821 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 608A476E1F1DF9C500B31821 /* words.txt */; };
@@ -40,8 +53,27 @@
 		FA39B25A1DF5A7D9005D12F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA39B2581DF5A7D9005D12F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6058D1DD1F32CE690074A261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA39B2441DF5A7D9005D12F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA39B24B1DF5A7D9005D12F2;
+			remoteInfo = ConcatenatingSignalProducers;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		601606FC1F2F22E000159846 /* ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
+		6058D1CE1F32CD720074A261 /* ImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		6058D1D01F32CDB50074A261 /* ImageViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModelTests.swift; sourceTree = "<group>"; };
+		6058D1D21F32CDF10074A261 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6058D1D81F32CE690074A261 /* ConcatenatingSignalProducersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcatenatingSignalProducersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6058D1DA1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatenatingSignalProducersTests.swift; sourceTree = "<group>"; };
+		6058D1DC1F32CE690074A261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605EB82B1F346B8800ABCAFE /* PaginatedListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedListViewModel.swift; sourceTree = "<group>"; };
+		605EB82D1F346EE500ABCAFE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		605EB82F1F347C5B00ABCAFE /* PaginatedListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedListViewModelTests.swift; sourceTree = "<group>"; };
 		608A476B1F1DF9C500B31821 /* SearchCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCellItem.swift; sourceTree = "<group>"; };
 		608A476C1F1DF9C500B31821 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		608A476E1F1DF9C500B31821 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -78,6 +110,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6058D1D51F32CE690074A261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6058D1E41F32CE970074A261 /* ReactiveCocoa.framework in Frameworks */,
+				6058D1E51F32CE970074A261 /* ReactiveSwift.framework in Frameworks */,
+				6058D1E61F32CE970074A261 /* Result.framework in Frameworks */,
+				6058D1E31F32CE7F0074A261 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA39B2491DF5A7D9005D12F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +135,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6058D1CD1F32CD690074A261 /* ImageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6058D1CE1F32CD720074A261 /* ImageViewModel.swift */,
+				6058D1D01F32CDB50074A261 /* ImageViewModelTests.swift */,
+			);
+			path = ImageViewModel;
+			sourceTree = "<group>";
+		};
+		6058D1D91F32CE690074A261 /* ConcatenatingSignalProducersTests */ = {
+			isa = PBXGroup;
+			children = (
+				6058D1DA1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift */,
+				6058D1DC1F32CE690074A261 /* Info.plist */,
+			);
+			path = ConcatenatingSignalProducersTests;
+			sourceTree = "<group>";
+		};
+		605EB82A1F346B7100ABCAFE /* PaginatedListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				605EB82B1F346B8800ABCAFE /* PaginatedListViewModel.swift */,
+				605EB82D1F346EE500ABCAFE /* Utils.swift */,
+				605EB82F1F347C5B00ABCAFE /* PaginatedListViewModelTests.swift */,
+			);
+			path = PaginatedListViewModel;
+			sourceTree = "<group>";
+		};
 		608A47691F1DF9C500B31821 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +265,7 @@
 		60DED8471F2F035D0011AF9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6058D1D21F32CDF10074A261 /* XCTest.framework */,
 				60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */,
 				60DED8481F2F035D0011AF9E /* CoreGraphics.framework */,
 			);
@@ -214,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				FA39B24E1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */,
+				6058D1D91F32CE690074A261 /* ConcatenatingSignalProducersTests */,
 				FA39B24D1DF5A7D9005D12F2 /* Products */,
 				60DED8471F2F035D0011AF9E /* Frameworks */,
 			);
@@ -223,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FA39B24C1DF5A7D9005D12F2 /* ConcatenatingSignalProducers.app */,
+				6058D1D81F32CE690074A261 /* ConcatenatingSignalProducersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +304,8 @@
 		FA39B24E1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */ = {
 			isa = PBXGroup;
 			children = (
+				605EB82A1F346B7100ABCAFE /* PaginatedListViewModel */,
+				6058D1CD1F32CD690074A261 /* ImageViewModel */,
 				60DED8291F2ED3670011AF9E /* Twitter */,
 				608A47741F1DFA0400B31821 /* Components */,
 				608A47691F1DF9C500B31821 /* Search */,
@@ -255,6 +331,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6058D1D71F32CE690074A261 /* ConcatenatingSignalProducersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6058D1DF1F32CE690074A261 /* Build configuration list for PBXNativeTarget "ConcatenatingSignalProducersTests" */;
+			buildPhases = (
+				6058D1D41F32CE690074A261 /* Sources */,
+				6058D1D51F32CE690074A261 /* Frameworks */,
+				6058D1D61F32CE690074A261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6058D1DE1F32CE690074A261 /* PBXTargetDependency */,
+			);
+			name = ConcatenatingSignalProducersTests;
+			productName = ConcatenatingSignalProducersTests;
+			productReference = 6058D1D81F32CE690074A261 /* ConcatenatingSignalProducersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FA39B24B1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA39B25E1DF5A7D9005D12F2 /* Build configuration list for PBXNativeTarget "ConcatenatingSignalProducers" */;
@@ -279,10 +373,15 @@
 		FA39B2441DF5A7D9005D12F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Jarroo;
 				TargetAttributes = {
+					6058D1D71F32CE690074A261 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA39B24B1DF5A7D9005D12F2;
+					};
 					FA39B24B1DF5A7D9005D12F2 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -303,11 +402,19 @@
 			projectRoot = "";
 			targets = (
 				FA39B24B1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */,
+				6058D1D71F32CE690074A261 /* ConcatenatingSignalProducersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6058D1D61F32CE690074A261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA39B24A1DF5A7D9005D12F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +449,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6058D1D41F32CE690074A261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605EB8311F347C6000ABCAFE /* PaginatedListViewModelTests.swift in Sources */,
+				6058D1E71F32F9A60074A261 /* ImageViewModel.swift in Sources */,
+				6058D1E21F32CE6E0074A261 /* ImageViewModelTests.swift in Sources */,
+				6058D1DB1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift in Sources */,
+				605EB8321F347C6300ABCAFE /* PaginatedListViewModel.swift in Sources */,
+				605EB8331F347C6600ABCAFE /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA39B2481DF5A7D9005D12F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +471,8 @@
 				60DED8431F2ED39D0011AF9E /* TableViewBindingHelper.swift in Sources */,
 				60DED8401F2ED39D0011AF9E /* TweetCellView.swift in Sources */,
 				608A477C1F1DFA0400B31821 /* CellProtocols.swift in Sources */,
+				605EB82E1F346EE600ABCAFE /* Utils.swift in Sources */,
+				6058D1CF1F32CD720074A261 /* ImageViewModel.swift in Sources */,
 				FA39B2521DF5A7D9005D12F2 /* ViewController.swift in Sources */,
 				60DED83B1F2ED39D0011AF9E /* Tweet.swift in Sources */,
 				601606FD1F2F22E000159846 /* ArrayExt.swift in Sources */,
@@ -365,6 +487,7 @@
 				60DED8441F2ED39D0011AF9E /* UIKitExtensions.swift in Sources */,
 				60DED8451F2ED39D0011AF9E /* TweetViewModel.swift in Sources */,
 				608A477F1F1DFA0400B31821 /* TableViewProtocols.swift in Sources */,
+				605EB82C1F346B8800ABCAFE /* PaginatedListViewModel.swift in Sources */,
 				60DED83C1F2ED39D0011AF9E /* TwitterResponse.swift in Sources */,
 				608A47701F1DF9C500B31821 /* SearchCellItem.swift in Sources */,
 				608A477D1F1DFA0400B31821 /* GenericTableCell.swift in Sources */,
@@ -372,6 +495,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6058D1DE1F32CE690074A261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA39B24B1DF5A7D9005D12F2 /* ConcatenatingSignalProducers */;
+			targetProxy = 6058D1DD1F32CE690074A261 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA39B2531DF5A7D9005D12F2 /* Main.storyboard */ = {
@@ -393,6 +524,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6058D1E01F32CE690074A261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ConcatenatingSignalProducersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ConcatenatingSignalProducersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConcatenatingSignalProducers.app/ConcatenatingSignalProducers";
+			};
+			name = Debug;
+		};
+		6058D1E11F32CE690074A261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ConcatenatingSignalProducersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ConcatenatingSignalProducersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConcatenatingSignalProducers.app/ConcatenatingSignalProducers";
+			};
+			name = Release;
+		};
 		FA39B25C1DF5A7D9005D12F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,6 +696,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6058D1DF1F32CE690074A261 /* Build configuration list for PBXNativeTarget "ConcatenatingSignalProducersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6058D1E01F32CE690074A261 /* Debug */,
+				6058D1E11F32CE690074A261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA39B2471DF5A7D9005D12F2 /* Build configuration list for PBXProject "ConcatenatingSignalProducers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
