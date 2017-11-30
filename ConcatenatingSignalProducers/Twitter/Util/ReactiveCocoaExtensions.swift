@@ -31,16 +31,15 @@ import Result
  */
 
 public func toVoidSignal<T, E>(signal: Signal<T, E>) -> Signal<(), NoError> {
-    return Signal {
-        sink in
+    return Signal({ (observer, lifetime) in
         signal.observe({
             event in
             switch event {
             case .value(_):
-                sink.send(value: ())
+                observer.send(value: ())
             default:
                 break
             }
         })
-    }
+    })
 }

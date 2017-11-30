@@ -36,11 +36,11 @@ class TwitterSearchViewModel {
         searchService.requestAccessToTwitterSignal()
             .then(searchText.producer.mapError({ _ in TwitterInstantError.NoError.toError() })
                 .filter {
-                    $0.characters.count > Constants.SearchCharacterMinimum
+                    $0.count > Constants.SearchCharacterMinimum
                 }
                 .throttle(Constants.SearchThrottleTime, on: QueueScheduler.main)
                 .on(starting: {
-                    _ in self.isSearching.value = true
+                    self.isSearching.value = true
                 })
                 .flatMap(.latest) { text in
                     self.searchService.signalForSearchWithText(text: text)

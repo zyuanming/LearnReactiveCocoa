@@ -11,7 +11,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import Result
 
-@objc protocol ReactiveView {
+protocol ReactiveView {
     func bindViewModel(_ viewModel: AnyObject)
 }
 

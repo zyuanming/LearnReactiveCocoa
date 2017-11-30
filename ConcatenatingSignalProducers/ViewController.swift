@@ -44,6 +44,8 @@ class APIClient {
 
 class ViewController: UIViewController {
 
+    let test = TestThen()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,9 +57,7 @@ class ViewController: UIViewController {
 //        a = TestSignalDeinit()
 //        a = nil
 //
-        _ = TestSignalAndObserver()
-
-        TestCombineLatest().test()
+        test.test()
     }
 
 
@@ -123,7 +123,7 @@ class TestConcate {
 
 
     func testPropertyToSignalProducer() {
-        let nextPageTrigger = MutableProperty()
+        let nextPageTrigger = MutableProperty(())
         var completedCalled = false
         searchImage(trigger: nextPageTrigger.producer.skip(first: 1)).on(completed: { completedCalled = true }).start()
 //        nextPageTrigger.value = ()
@@ -246,7 +246,7 @@ class TestSignalAndObserver {
             })
 
         SignalProducer(refreshSignal)
-            .on(starting: { _ in
+            .on(starting: {
                 self.isLoading.value = true
                 print("isLoading")
             })
@@ -265,7 +265,7 @@ class TestSignalAndObserver {
             .flatMap(.latest, { _ in
                 return SignalProducer(value: [Player(), Player(), Player()])
             })
-            .on(started: { _ in
+            .on(started: {
                 self.isLoading.value = false
                 print("isLoading completed")
             })
@@ -332,6 +332,36 @@ class TestCombineLatest {
         }
     }
 }
+
+
+class TestThen {
+    let a = MutableProperty<String>("")
+    let c = MutableProperty<String>("c")
+    func test() {
+        let hasGetPlayersInfoSignal = a.producer
+            .skip(first: 1)
+            .map { $0.count > 0 }
+            .flatMap(.latest, { _ in SignalProducer<(), NoError>.empty })
+
+        hasGetPlayersInfoSignal.then(c.producer)
+            .on(started: { [weak self] in
+                guard let strongSelf = self else { return }
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    strongSelf.c.value = "cc"
+                })
+
+                print("hello...ming")
+            })
+            .startWithValues { (state) in
+                print("state is \(state)")
+        }
+
+        a.value = "aa"
+        c.value = "ccc"
+    }
+}
+
 
 
 
