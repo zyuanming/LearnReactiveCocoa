@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5782D9823355CC5EC24FF47C /* Pods_ConcatenatingSignalProducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7BD8453484FC53159D8258 /* Pods_ConcatenatingSignalProducers.framework */; };
 		601606FD1F2F22E000159846 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601606FC1F2F22E000159846 /* ArrayExt.swift */; };
 		6058D1CF1F32CD720074A261 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1CE1F32CD720074A261 /* ImageViewModel.swift */; };
 		6058D1DB1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1DA1F32CE690074A261 /* ConcatenatingSignalProducersTests.swift */; };
 		6058D1E21F32CE6E0074A261 /* ImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1D01F32CDB50074A261 /* ImageViewModelTests.swift */; };
 		6058D1E31F32CE7F0074A261 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6058D1D21F32CDF10074A261 /* XCTest.framework */; };
-		6058D1E41F32CE970074A261 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */; };
 		6058D1E51F32CE970074A261 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92521DF5D39700539253 /* ReactiveSwift.framework */; };
 		6058D1E61F32CE970074A261 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92541DF5D44F00539253 /* Result.framework */; };
 		6058D1E71F32F9A60074A261 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058D1CE1F32CD720074A261 /* ImageViewModel.swift */; };
@@ -43,9 +43,7 @@
 		60DED8451F2ED39D0011AF9E /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DED8381F2ED39D0011AF9E /* TweetViewModel.swift */; };
 		60DED8461F2ED39D0011AF9E /* TwitterSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DED8391F2ED39D0011AF9E /* TwitterSearchViewModel.swift */; };
 		60DED8491F2F035D0011AF9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DED8481F2F035D0011AF9E /* CoreGraphics.framework */; };
-		60DED84B1F2F09CC0011AF9E /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */; };
-		FA0A92531DF5D39700539253 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92521DF5D39700539253 /* ReactiveSwift.framework */; };
-		FA0A92551DF5D44F00539253 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A92541DF5D44F00539253 /* Result.framework */; };
+		D4658CE8BA2EF4DBD22CE995 /* Pods_ConcatenatingSignalProducersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F483D2AE191A5E5BC716407 /* Pods_ConcatenatingSignalProducersTests.framework */; };
 		FA39B2501DF5A7D9005D12F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39B24F1DF5A7D9005D12F2 /* AppDelegate.swift */; };
 		FA39B2521DF5A7D9005D12F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39B2511DF5A7D9005D12F2 /* ViewController.swift */; };
 		FA39B2551DF5A7D9005D12F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA39B2531DF5A7D9005D12F2 /* Main.storyboard */; };
@@ -64,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03EFF82EE25964567A142006 /* Pods-ConcatenatingSignalProducersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcatenatingSignalProducersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConcatenatingSignalProducersTests/Pods-ConcatenatingSignalProducersTests.release.xcconfig"; sourceTree = "<group>"; };
+		0EFD24FB56350790201711E7 /* Pods-ConcatenatingSignalProducersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcatenatingSignalProducersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConcatenatingSignalProducersTests/Pods-ConcatenatingSignalProducersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7BD8453484FC53159D8258 /* Pods_ConcatenatingSignalProducers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcatenatingSignalProducers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		601606FC1F2F22E000159846 /* ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		6058D1CE1F32CD720074A261 /* ImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		6058D1D01F32CDB50074A261 /* ImageViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModelTests.swift; sourceTree = "<group>"; };
@@ -96,8 +97,10 @@
 		60DED8381F2ED39D0011AF9E /* TweetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 		60DED8391F2ED39D0011AF9E /* TwitterSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchViewModel.swift; sourceTree = "<group>"; };
 		60DED8481F2F035D0011AF9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		60DED84C1F2F09F80011AF9E /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
+		6F483D2AE191A5E5BC716407 /* Pods_ConcatenatingSignalProducersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcatenatingSignalProducersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4829AD54CF3E122C803E6A4 /* Pods-ConcatenatingSignalProducers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcatenatingSignalProducers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConcatenatingSignalProducers/Pods-ConcatenatingSignalProducers.debug.xcconfig"; sourceTree = "<group>"; };
+		E494F0AC627879AFD5858CDE /* Pods-ConcatenatingSignalProducers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcatenatingSignalProducers.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConcatenatingSignalProducers/Pods-ConcatenatingSignalProducers.release.xcconfig"; sourceTree = "<group>"; };
 		FA0A92521DF5D39700539253 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		FA0A92541DF5D44F00539253 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 		FA39B24C1DF5A7D9005D12F2 /* ConcatenatingSignalProducers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcatenatingSignalProducers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,10 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6058D1E41F32CE970074A261 /* ReactiveCocoa.framework in Frameworks */,
 				6058D1E51F32CE970074A261 /* ReactiveSwift.framework in Frameworks */,
 				6058D1E61F32CE970074A261 /* Result.framework in Frameworks */,
 				6058D1E31F32CE7F0074A261 /* XCTest.framework in Frameworks */,
+				D4658CE8BA2EF4DBD22CE995 /* Pods_ConcatenatingSignalProducersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DED84B1F2F09CC0011AF9E /* ReactiveCocoa.framework in Frameworks */,
 				60DED8491F2F035D0011AF9E /* CoreGraphics.framework in Frameworks */,
-				FA0A92531DF5D39700539253 /* ReactiveSwift.framework in Frameworks */,
-				FA0A92551DF5D44F00539253 /* Result.framework in Frameworks */,
+				5782D9823355CC5EC24FF47C /* Pods_ConcatenatingSignalProducers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +267,22 @@
 			isa = PBXGroup;
 			children = (
 				6058D1D21F32CDF10074A261 /* XCTest.framework */,
-				60DED84A1F2F09CC0011AF9E /* ReactiveCocoa.framework */,
 				60DED8481F2F035D0011AF9E /* CoreGraphics.framework */,
+				4A7BD8453484FC53159D8258 /* Pods_ConcatenatingSignalProducers.framework */,
+				6F483D2AE191A5E5BC716407 /* Pods_ConcatenatingSignalProducersTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D1461BAFF518D905563819 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4829AD54CF3E122C803E6A4 /* Pods-ConcatenatingSignalProducers.debug.xcconfig */,
+				E494F0AC627879AFD5858CDE /* Pods-ConcatenatingSignalProducers.release.xcconfig */,
+				0EFD24FB56350790201711E7 /* Pods-ConcatenatingSignalProducersTests.debug.xcconfig */,
+				03EFF82EE25964567A142006 /* Pods-ConcatenatingSignalProducersTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FA0A924C1DF5D28200539253 /* Frameworks */ = {
@@ -289,6 +302,7 @@
 				6058D1D91F32CE690074A261 /* ConcatenatingSignalProducersTests */,
 				FA39B24D1DF5A7D9005D12F2 /* Products */,
 				60DED8471F2F035D0011AF9E /* Frameworks */,
+				62D1461BAFF518D905563819 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,9 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6058D1DF1F32CE690074A261 /* Build configuration list for PBXNativeTarget "ConcatenatingSignalProducersTests" */;
 			buildPhases = (
+				20EA1D20BF67ADE84DE06691 /* [CP] Check Pods Manifest.lock */,
 				6058D1D41F32CE690074A261 /* Sources */,
 				6058D1D51F32CE690074A261 /* Frameworks */,
 				6058D1D61F32CE690074A261 /* Resources */,
+				8B94C8BF3F1B49651968F71E /* [CP] Embed Pods Frameworks */,
+				9FF643EC3E6E7F9222A687AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,10 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA39B25E1DF5A7D9005D12F2 /* Build configuration list for PBXNativeTarget "ConcatenatingSignalProducers" */;
 			buildPhases = (
+				0C9D0DB3D8E6F1D4201C53D8 /* [CP] Check Pods Manifest.lock */,
 				FA39B2481DF5A7D9005D12F2 /* Sources */,
 				FA39B2491DF5A7D9005D12F2 /* Frameworks */,
 				FA39B24A1DF5A7D9005D12F2 /* Resources */,
-				FA0A924F1DF5D2CF00539253 /* ShellScript */,
+				878A580E595D28C25BCD613A /* [CP] Embed Pods Frameworks */,
+				BDD7155177588ABC1184BB1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,21 +451,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FA0A924F1DF5D2CF00539253 /* ShellScript */ = {
+		0C9D0DB3D8E6F1D4201C53D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20EA1D20BF67ADE84DE06691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		878A580E595D28C25BCD613A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcatenatingSignalProducers/Pods-ConcatenatingSignalProducers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B94C8BF3F1B49651968F71E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcatenatingSignalProducersTests/Pods-ConcatenatingSignalProducersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF643EC3E6E7F9222A687AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcatenatingSignalProducersTests/Pods-ConcatenatingSignalProducersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD7155177588ABC1184BB1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcatenatingSignalProducers/Pods-ConcatenatingSignalProducers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -528,6 +621,7 @@
 /* Begin XCBuildConfiguration section */
 		6058D1E01F32CE690074A261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFD24FB56350790201711E7 /* Pods-ConcatenatingSignalProducersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -548,6 +642,7 @@
 		};
 		6058D1E11F32CE690074A261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EFF82EE25964567A142006 /* Pods-ConcatenatingSignalProducersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -675,38 +770,32 @@
 		};
 		FA39B25F1DF5A7D9005D12F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4829AD54CF3E122C803E6A4 /* Pods-ConcatenatingSignalProducers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/ConcatenatingSignalProducers/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ConcatenatingSignalProducers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarroo.example.ConcatenatingSignalProducers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		FA39B2601DF5A7D9005D12F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E494F0AC627879AFD5858CDE /* Pods-ConcatenatingSignalProducers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/ConcatenatingSignalProducers/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ConcatenatingSignalProducers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarroo.example.ConcatenatingSignalProducers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
